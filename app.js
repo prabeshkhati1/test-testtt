@@ -41,7 +41,7 @@ const CONFIG = {
   //
   // If you haven't set it up yet, leave this as an empty string "" and
   // the server will skip the auth check (not recommended for production).
-  clientSecret: "",    // ← Paste your CLIENT_SECRET value here
+  clientSecret: "prabesh-secret-2025",    // ← Paste your CLIENT_SECRET value here
 };
 
 
