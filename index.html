@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PrabeshGPT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body class="landing-body">
+
+  <!-- Decorative noise texture (purely visual, no interaction) -->
+  <div class="noise-overlay"></div>
+
+  <!-- ══════════════════════════════════
+       TOP HEADER — Logo + Tag
+  ══════════════════════════════════ -->
+  <header class="landing-header">
+    <div class="logo-mark">PG<span class="logo-dot">•</span></div>
+    <span class="header-tag">Model Studio</span>
+  </header>
+
+  <!-- ══════════════════════════════════
+       HERO SECTION — Two-column grid
+       Left: text + CTA button
+       Right: terminal animation + feature pills
+  ══════════════════════════════════ -->
+  <main class="landing-main">
+    <div class="hero-grid">
+
+      <!-- LEFT COLUMN: Text content -->
+      <div class="hero-text">
+        <div class="eyebrow">PrabeshGPT</div>
+
+        <h1 class="hero-title">
+          My Custom Models.<br/>
+          <span class="title-accent">Your Questions!</span>
+        </h1>
+
+        <p class="hero-sub">
+          A private Chat Interface to interact with all your thoughts!
+          — switch, chat, and compare in one place.
+        </p>
+
+        <!-- Main CTA button — takes user to chat.html -->
+        <a href="chat.html" class="cta-btn">
+          <span>Open Studio</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- RIGHT COLUMN: Visual demo + feature badges -->
+      <div class="hero-visual">
+
+        <!-- Fake terminal showing a model interaction — purely decorative animation -->
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <!-- macOS-style traffic light dots -->
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">Prabesh's Model</span>
+          </div>
+          <div class="terminal-body">
+            <!-- Each line fades in with a CSS delay (t-delay-1, t-delay-2, etc.) -->
+            <div class="t-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">select model</span>
+              <span class="t-arg">gpt-researcher-v2</span>
+            </div>
+            <div class="t-line t-delay-1">
+              <span class="t-prompt">›</span>
+              <span class="t-ok">Model loaded</span>
+              <span class="t-dim">— ready</span>
+            </div>
+            <div class="t-line t-delay-2">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">send</span>
+              <span class="t-arg">"Summarize Q3 trends"</span>
+            </div>
+            <div class="t-line t-delay-3 t-response">
+              Analyzing data patterns across 14 segments…
+            </div>
+            <!-- Blinking cursor — animated in CSS -->
+            <div class="t-line t-delay-4"><span class="t-blink">▌</span></div>
+          </div>
+        </div>
+
+        <!-- Feature pills — short marketing highlights shown below the terminal -->
+        <!-- ✅ Updated to accurately reflect how the app works: -->
+        <!--    - Keys are secured server-side (not entered by users) -->
+        <!--    - Conversation persists across refreshes via localStorage -->
+        <div class="feature-pills">
+          <div class="pill">⚡ Switch Models Instantly</div>
+          <div class="pill">🔒 Keys Secured Server-Side</div>
+          <div class="pill">💬 Conversation Saved Locally</div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="landing-footer">
+    <span>Built with ❤️ by Prabesh!</span>
+  </footer>
+
+</body>
+</html>
