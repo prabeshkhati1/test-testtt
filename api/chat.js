@@ -135,7 +135,7 @@ export default async function handler(req, res) {
   // ── CORS — only allow requests from your own domain ───────────────
   // This stops other websites from making cross-origin requests to
   // your /api/chat endpoint from their pages.
- const allowedOrigin = "https://test-testtt-git-main-prabeshs-projects-8240b2b5.vercel.app/";
+ const allowedOrigin = "https://test-testtt-git-main-prabeshs-projects-8240b2b5.vercel.app";
   const origin = req.headers["origin"] || "";
 
   res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
