@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PrabeshGPT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="landing-body">
+
+  <div class="noise-overlay"></div>
+
+  <!-- HEADER -->
+  <header class="landing-header">
+    <div class="logo-mark">PrabeshGPT<span class="logo-dot">.</span></div>
+    <span class="header-tag">Private Studio</span>
+  </header>
+
+  <!-- HERO -->
+  <main class="landing-main">
+    <div class="hero-grid">
+
+      <!-- LEFT: Text -->
+      <div class="hero-text">
+        <div class="eyebrow">AI Chat Interface</div>
+
+        <h1 class="hero-title">
+          Think it.<br/>
+          <span class="title-accent">Ask anything.</span>
+        </h1>
+
+        <p class="hero-sub">
+          A private interface for your custom AI models.
+          Switch between engines, keep your full history,
+          and work without limits.
+        </p>
+
+        <a href="chat.html" class="cta-btn">
+          <span>Open Studio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- RIGHT: Terminal demo -->
+      <div class="hero-visual">
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">prabeshgpt — model session</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">›</span>
+              <span class="t-cmd">model</span>
+              <span class="t-arg"> prabeshgpt-v1-Pro</span>
+            </div>
+            <div class="t-line t-delay-1">
+              <span class="t-ok">✓ Ready</span>
+              <span class="t-dim"> — context 1M tokens</span>
+            </div>
+            <div class="t-line t-delay-2">
+              <span class="t-prompt">›</span>
+              <span class="t-cmd">send</span>
+              <span class="t-arg"> "Summarise Q3 findings"</span>
+            </div>
+            <div class="t-line t-delay-3 t-response">
+              Scanning 14 data segments across regions…
+            </div>
+            <div class="t-line t-delay-4"><span class="t-blink">▋</span></div>
+          </div>
+        </div>
+
+        <div class="feature-pills">
+          <div class="pill">Switch models instantly</div>
+          <div class="pill">Keys secured server-side</div>
+          <div class="pill">History saved locally</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    Built with ❤️ by Prabesh
+  </footer>
+
+</body>
+</html>
